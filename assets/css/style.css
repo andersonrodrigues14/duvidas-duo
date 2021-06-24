@@ -11,6 +11,11 @@ header {
     
 }
 
+h2 {
+    color: #E1A607;
+    font-size: 45px;
+    font-weight: bold;
+}
 .header-area {
     margin: auto;
     max-width: 1140px;
@@ -106,3 +111,85 @@ header {
     display: flex;
     padding-left: 5px;
 }
+
+.header-description {
+    display: flex;
+    max-width: 1140px;
+    padding-top: 100px;
+    margin: auto;
+}
+.header-description-content {
+    width: 350px;
+}
+.header-description-spotlight {
+    font-size: 18px;
+    font-weight: bold;
+}
+.header-description-text {
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #8A8B8B;
+}
+
+.header-description-text  a{
+    font-size: 18px;
+    color: #B76FF0;
+}
+
+.section-body{
+    background-color: #F1F1F1;
+    padding-bottom: 50px;
+}
+
+.accordion{
+    
+   margin-left: 60px;
+    max-width: 1000px;
+}
+
+.accordion .accordion-item{
+    position: relative;
+    padding: 20px;
+}
+
+.accordion .accordion-item .label {
+    position: relative;
+    color: #B56CEC;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.accordion .accordion-item .label::before{
+    content:url("../icones/seta.png");
+    position: absolute;
+    top: 35%;
+    right: 20px;
+    transform: translate(-50%);
+}
+
+.accordion .accordion-item .content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .accordion-item.active .label::before{
+    content:url("../icones/seta-cima.png");
+}
+.accordion .accordion-item.active .content {
+    height: 100px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #A141EB;
+    height: 50px;
+}
+
+
+
